@@ -1,0 +1,22 @@
+$lato: 'Lato', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+/* Font Size */
+$font-size-xl   : 1.429rem; // 20px
+$font-size-lg   : 1.286rem; // 18px
+$font-size-sm   : 1.143rem; // 16px
+$font-size-base : 1rem;     // 14px
+$font-size-xs   : 0.857rem; // 12px
+
+/* Card */
+$box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+
+/* Leads */
+$font-size-nav: 18px;
+$font-size-button: 16px;
+
+/* Article Item */
+$font-size-article-title: 2rem; // 28px
+
+.in-active-button  { background-color: $color-grey !important; }

@@ -1,0 +1,74 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.alertModal {
+    &__header {
+        background-color: $color-orange;
+        border-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        h3 {
+            color: $color-white;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: bold;
+            padding: 16px 20px;
+            span {
+                float: right;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__content {
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: normal;
+        padding: 10px 0;
+        &__default-btn{
+            padding: 15px 30px;
+            cursor: pointer;
+            font-size: 16px;
+            // font-family: $font-OSSB;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+            outline: 0;
+            background-color: transparent;
+            color: $color-grey;
+            border: 1px solid $color-brand-blue;
+            margin: 10px auto 18px auto;
+            display: block;
+        }
+
+        &__label-text {
+            display: -webkit-flex; /* Safari */
+            -webkit-align-items: center; /* Safari 7.0+ */
+            display: flex;
+            align-items: center;
+        }
+
+        .row {
+            width: 100%;
+            margin: 0;
+            padding: 10px 5px;
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+        }
+    }
+
+    &__footer {
+        padding: 17px 20px;
+        text-align: right;
+        cursor: pointer;
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: bold;
+        border-top: 1px solid $color-grey;
+    }
+}

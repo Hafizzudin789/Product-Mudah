@@ -1,0 +1,107 @@
+.document-list {
+    .product-wrapper,
+    .title-wrapper {
+        width:100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size:14px;
+        .product-checkbox {
+            padding-left:15px;
+            padding-right:15px;
+            width:55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .title-wrapper {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .product-wrapper {
+        border-radius: 4px;
+        border: 1px solid $border-lightgrey;
+        .row {
+            min-height: 40px;
+            align-items:center;
+        }
+        .product-checkbox {
+            .mycheckbox {
+                width: 22px;
+                height: 22px;
+                background: none;
+                label {
+                    width: 100%;
+                    height:100%;
+                    margin-bottom: 0;
+                    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTIuMTY3IDQuMzIzYzAtMS4xOS45NzMtMi4xNTYgMi4xNTYtMi4xNTZoMTcuMzU0YzEuMTkgMCAyLjE1Ni45NzMgMi4xNTYgMi4xNTZ2MTcuMzU0YTIuMTYxIDIuMTYxIDAgMCAxLTIuMTU2IDIuMTU2SDQuMzIzYTIuMTYxIDIuMTYxIDAgMCAxLTIuMTU2LTIuMTU2VjQuMzIzek0zLjI1IDIxLjc1NmMwIC41NS40NDQuOTk0Ljk5NC45OTRoMTcuNTEyYS45OTMuOTkzIDAgMCAwIC45OTQtLjk5NFY0LjI0NGEuOTkzLjk5MyAwIDAgMC0uOTk0LS45OTRINC4yNDRhLjk5My45OTMgMCAwIDAtLjk5NC45OTR2MTcuNTEyeiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMiAtMikiPgogICAgICAgIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjYSIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBmaWxsPSIjOUFBQ0MxIiBtYXNrPSJ1cmwoI2IpIj4KICAgICAgICAgICAgPHBhdGggZD0iTTAgMGgyNnYyNkgweiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==');
+                    &:before {
+                        display: none;
+                    }
+                }
+                &.checked {
+                    label {
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTIuMjQuMDY4QTIuMTc3IDIuMTc3IDAgMCAwIC4wNjggMi4yNHYxNy40NzdjMCAxLjE5Mi45NzIgMi4xNzIgMi4xNzIgMi4xNzJoMTcuNDc3YTIuMTc3IDIuMTc3IDAgMCAwIDIuMTcyLTIuMTcyVjIuMjRBMi4xNzcgMi4xNzcgMCAwIDAgMTkuNzE3LjA2OEgyLjI0em0xNC40MDQgNC4zNjRsMS43NjIgMS42MDMtMTAuMzcgMTEuNDA4LTQuNjk1LTQuNjk2IDEuNjg0LTEuNjg1IDIuOTMgMi45MyA4LjY5LTkuNTZ6Ii8+CiAgICA8L2RlZnM+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjYSIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8cGF0aCBmaWxsPSIjMDA2N0IxIiBkPSJNLTYuNDc5IDI4LjQzNWgzNC45MTRWLTYuNDc5SC02LjQ3OXoiIG1hc2s9InVybCgjYikiLz4KICAgIDwvZz4KPC9zdmc+Cg==');
+                    }
+                }
+            }
+        }
+        
+        h4 {
+            font-size:16px;
+            margin-bottom: 0;
+            font-weight:bold;
+            a {
+                color: $color-blue;
+                margin-bottom: 0;
+                &:hover {
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: $color-blue;
+                }
+            }
+            
+        }
+        p {
+            font-size:14px;
+            color: $color-grey;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+    }
+}
+
+.sales-row p.note {
+	color: $subtitle-grey;
+	font-size:12px;
+	font-weight:normal;
+	span.dot {
+		display: inline-block;
+		width: 9px;
+		height:9px;
+		border-radius:9px;
+		margin-right:5px;
+		background-color: $green-icon;
+	}
+	&.note-amber {
+		span.dot {
+			background-color: $sandyBrown;
+		}
+	}
+	&.note-red {
+		color: $color-red;
+		span.dot {
+			background-color: $color-red;
+		}
+	}
+}
+.sales-row p.note-confirm {
+	color: $color-red;
+	font-size:12px;
+	font-weight:normal;
+	img {
+		width:20px;
+		height: 20px;
+	}
+}

@@ -1,0 +1,191 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.create-cust {
+    .input-component--error{
+        bottom: -5px;
+    }
+    &__header {
+        background-color: $color-white;
+        border-bottom: solid 1px $formborder-lightgrey;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;  
+        color: $title-grey;
+        font-size: 18px;
+        // font-family: $font-LR;
+        font-weight: normal;  
+        h3 {
+            color: $title-grey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: bold;
+            padding: 30px;
+            margin: 0;
+            span {
+                float: right;
+                cursor: pointer;
+            }
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            padding-top: 15px;
+            padding-right: 30px;
+            cursor: pointer;
+        }
+
+        > .row{
+            > .col-2{
+                img{
+                    position: absolute;
+                    top: 50%;
+                    right: 50px;
+                    transform: translateY(-50%);
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    &__content {
+        padding: 20px 30px;
+        color: $formlabel;
+        font-size: 14px;
+        // font-family: $font-LB;
+        font-weight: bold;
+        max-height: 400px;
+        overflow-y: scroll;
+        .form-row{
+            margin-bottom: 25px;
+        }
+        h4{
+            color: $formsubtitle;
+            font-size: 14px;
+            // font-family: $font-LB;
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+        .input-component{
+            margin-top: 0;
+            input{
+                border: solid 1px $formborder-lightgrey;
+                border-radius: 4px;
+                margin-bottom: 0;
+                padding: 8px;
+                color: $formlabel;
+                font-size: 14px;
+                // font-family: $font-LR;
+                font-weight: normal;
+            }
+        }
+        .input-component--label{
+            display: none;
+        }
+        .dropdown{
+            padding: 0;
+            .dropdown__box{
+                border: solid 1px $formborder-lightgrey;
+                border-radius: 4px;
+                padding: 8px;
+                color: $formlabel;
+                font-size: 14px;
+                // font-family: $font-LR;
+                font-weight: normal;
+            }
+        }
+        input[type=radio]{
+            width: 15px;
+            height: 15px;
+            position: relative;
+            top: 3px;
+            margin-right: 5px;
+        }
+        .msg_box{
+            border: 1px solid $formborder-lightgrey;
+            padding: 30px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-label{
+            color: $formlabel;
+            font-size: 12px;
+            // font-family: $font-LR;
+            font-weight: normal;
+            padding-bottom: 5px;
+        }
+        .form-link{
+            color: $color-blue;
+            font-size: 14px;
+            // font-family: $font-LB;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .field-show{
+            display: block;
+        }
+        .field-hide{
+            display: none;
+        }
+        label {
+            color:$title-grey;
+            font-size: 14px;
+            // font-family: $font-LB;
+            font-weight: bold;
+            span{
+                color: $formlabel;
+                font-size: 14px;
+                // font-family: $font-LR;
+                font-weight: normal;
+            }
+        }
+
+    }
+
+    &__footer {
+        padding: 25px 20px;
+        text-align: right;
+        cursor: pointer;
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: bold;
+        //border-top: 1px solid $formborder-lightgrey;
+        background: $color-grey1;
+        .cancel-btn{
+            background-color: $color-white;
+            border: 1px solid $color-blue;
+            color:$color-blue;
+            font-size: 14px;
+            // font-family: $font-LB;
+            font-weight: bold;
+            padding: 10px 2rem;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .next-btn{
+            background-color: $color-blue;
+            color: $color-white;
+            font-size: 14px;
+            // font-family: $font-LB;
+            font-weight: bold;
+            padding: 10px 2rem;
+            border-radius: 4px;
+            &.disabled{
+                //pointer-events: none;
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position:absolute;
+                    background: rgba(255,255,255,0.5)
+                }
+                &:hover {
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

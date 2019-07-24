@@ -1,0 +1,99 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.product-eligibility {
+    &__header {
+        background-color: $color-white;
+
+        h3 {
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: bold;
+            padding: 16px 20px;
+            border-bottom: 1px solid $color-grey;
+
+            span {
+                float: right;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__content {
+        label {
+            color: $color-grey;
+            font-size: 14px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+            display: block;
+            letter-spacing: -0.2px;
+        }
+
+        &__textbox {
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+            border: 0;
+            outline: 0;
+            width: 100%;
+            border-bottom: 1px solid $color-grey;
+        }
+
+        .dropdown {
+            margin: 0;
+            padding: 0;
+
+            &__box {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        &__no-border {
+            @extend .product-eligibility__content__textbox;
+
+            border-bottom: 0;
+        }
+
+        &__radio {
+            margin-right: 1rem;
+        }
+
+        &__checkbox {
+            margin-right: 1rem;
+        }
+
+        .row {
+            width: 100%;
+            margin: 0;
+            padding: 15px 5px;
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+
+            .col-7 {
+                -webkit-align-items: center; /* Safari 7.0+ */
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .row.last {
+            padding-bottom: 0;
+        }
+    }
+
+    &__footer {
+        padding: 17px 20px;
+        text-align: right;
+        cursor: pointer;
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: bold;
+        border-top: 1px solid $color-grey;
+    }
+}

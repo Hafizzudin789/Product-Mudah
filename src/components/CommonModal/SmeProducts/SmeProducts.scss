@@ -1,0 +1,80 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.sme-products {
+    &__header {
+        background-color: $color-white;
+        border-radius: 4px;
+        position: relative;
+        h3 {
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: bold;
+            padding: 25px 34px;
+            border-bottom: 1px solid $color-grey3;
+            margin: 0;
+
+            span {
+                float: none;
+                cursor: pointer;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__content {
+        label {
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+            display: block;
+            letter-spacing: -0.2px;
+        }
+
+        &__search {
+            border-bottom: solid 1px $color-grey3;
+            padding: 0 17px;
+        }
+
+        &__container {
+            max-height: 215px;
+            overflow-y: scroll;
+            padding: 15px 10px 0;
+
+            .row {
+                width: 100%;
+                margin: 0;
+                padding: 8px 5px 6px;
+                color: $color-darkgrey;
+                font-size: 16px;
+                // font-family: $font-OSR;
+                font-weight: normal;
+
+                .col-11 {
+                    -webkit-align-items: center; /* Safari 7.0+ */
+                    display: flex;
+                    align-items: center;
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        padding: 20px 34px;
+        text-align: right;
+        cursor: pointer;
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: bold;
+        //border-top: 1px solid $color-grey3;
+        background: $color-grey1;
+        margin-top: 10px;
+    }
+}

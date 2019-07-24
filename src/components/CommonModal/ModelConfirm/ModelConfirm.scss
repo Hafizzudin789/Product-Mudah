@@ -1,0 +1,115 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.model_confirm {
+    &__header {
+        background-color: white;
+        border-radius: 4px;
+        border-bottom: 1px solid #e6ebf1;
+        h2 {
+            color: #424b57;
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 25px 30px 28px;
+            margin: 0 !important;
+            font-weight: normal;
+            span {
+                float: right;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__footer {
+        height: 80px;
+        background: #f3fbfe;
+        padding: 20px 28px;
+        display: flex;
+        justify-content: flex-end;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    &__content {
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: normal;
+        padding: 40px 30px;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: #424b57;
+        &__button-box{
+            text-align: center;
+            &__green-btn{
+                background-color: #0067b1;
+                border: 1px solid $color-brand-blue;
+                margin-right: 0;
+                padding: 8px 30px;
+                cursor: pointer;
+                font-size: 14px;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                text-align: center;
+                color: white;
+                // font-family: $font-OSSB;
+                border-radius: 4px;
+                text-align: center;
+                font-weight: 500;
+                margin-right: 10px;
+                outline: 0;
+                border: solid 1px #0067b1;
+            }
+            &__default-btn{
+                background-color: white;
+                border: 1px solid $color-brand-blue;
+                margin-right: 0;
+                padding: 8px 30px;
+                cursor: pointer;
+                font-size: 14px;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                text-align: center;
+                color: #0067b1;
+                // font-family: $font-OSSB;
+                border-radius: 4px;
+                text-align: center;
+                font-weight: 500;
+                margin-right: 10px;
+                outline: 0;
+                border: solid 1px #0067b1;
+            }
+        }
+        &__label-text {
+            display: -webkit-flex; /* Safari */
+            -webkit-align-items: center; /* Safari 7.0+ */
+            display: flex;
+            align-items: center;
+        }
+        .row {
+            width: 100%;
+            margin: 0;
+            padding: 10px 5px;
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+        }
+    }
+}

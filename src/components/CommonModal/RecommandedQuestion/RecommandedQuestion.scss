@@ -1,0 +1,96 @@
+@import '_color.scss';
+@import '_variable.scss';
+.recommanded-question{
+    &__header{
+        background-color: $color-white; 
+        h3{
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: bold;
+            padding: 16px 20px;
+            border-bottom: 1px solid $color-grey;
+            span{
+                float: right;
+                cursor: pointer;
+            }
+        }
+    }
+    &__content{
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: normal;
+        &__radio{
+            span{
+                position: relative;
+                top: -0.35rem;
+            }
+        }
+        &__checkbox{
+            margin-right: 1rem;
+            span{
+                position: relative;
+                top: -0.35rem;
+            }
+        }
+        &__label-text{
+            display: -webkit-flex; /* Safari */
+            -webkit-align-items: center; /* Safari 7.0+ */
+            display: flex;
+            align-items: center;
+
+        }
+        .row{
+            width: 100%;
+            margin: 0;
+            padding: 10px 5px;
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+        }
+    }
+    &__footer {
+        text-align: center;
+        border-top: 1px solid $color-grey;
+        &--btn{
+            padding: 17px 20px;
+            margin: 10px 0 30px 0;
+            cursor: pointer;
+            color: $color-white;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: 500;
+            border-top: 1px solid $color-grey;
+            background-color: $color-green;
+        }
+    }
+}
+/*Browser compactable radio styles start*/
+  :root input[type=radio] {
+    /* original check box are push outside the viexport */
+    position: absolute;
+    left: -1000em;
+  }
+
+  :root input[type=radio] + label:before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0 .5em 0 0;
+    background: url('../../../../../assets/icons/btn_radio-unselected.svg') no-repeat;
+    vertical-align: bottom;
+    position: relative;
+    bottom: 2px;
+  }
+
+  :root input[type=radio]:checked + label:before {
+    background: url('../../../../../assets/icons/btn_radio-selected.svg') no-repeat;
+  }
+
+  :root input[type=radio]:focus + label:before {
+    outline: none;
+  }
+  /*Browser compactable radio end*/

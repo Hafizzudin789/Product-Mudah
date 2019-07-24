@@ -1,0 +1,86 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.PDF-viewer-header{
+  background-color: $color-brand-blue;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  h3 {
+      color: $color-white;
+      font-size: 16px;
+      // font-family: $font-OSR;
+      font-weight: bold;
+      padding: 14px 20px;
+      margin: 0px;
+      span {
+          float: right;
+          cursor: pointer;
+      }
+  }
+}
+
+.PDF-viewer {
+  max-height: 460px;
+  overflow-y: scroll;
+  &--pagination {
+    text-align: center;
+    padding-top: 10px;
+    button {
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin-right: 10px;
+      border: solid 1px $color-grey;
+      background-color: transparent;
+    }
+  }
+  img {
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+  }
+}
+.PDF-viewer-footer{
+  background-color: $color-brand-blue;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  min-height: 68px;
+  
+  padding: 10px;
+  .print-share {
+    margin-bottom: 0;
+    &__text {
+      color: $color-white;
+    }
+    &__button {
+      border-color: $color-white;
+    }
+  }
+  
+  h3 {
+      color: $color-white;
+      font-size: 16px;
+      // font-family: $font-OSR;
+      padding: 16px 20px;
+      margin: 0px;
+      float: right;
+      div{
+        position: relative;
+        top: 0.5rem;
+        display: inline-block;
+        padding-right: 2rem;
+        cursor: pointer;
+      }
+      span {
+        padding: 0.5rem;
+        float: right;
+        cursor: pointer;
+        background-color: $color-white;
+        border-radius: 50%;
+      }
+  }
+}

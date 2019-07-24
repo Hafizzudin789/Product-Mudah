@@ -1,0 +1,41 @@
+@import '~normalize.css/normalize.css';
+@import '~react-dates/css/variables.scss';
+@import '~react-dates/css/styles.scss';
+@import '~bootstrap/scss/bootstrap-grid.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~spinkit/scss/spinners/11-folding-cube.scss';
+
+@import 'base';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  // font-family: $font-OSR;
+  background-color: $color-white;
+}
+
+button {
+  outline: none !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import 'button.scss';
+@import 'modal';
+@import 'input';
+@import 'lists';

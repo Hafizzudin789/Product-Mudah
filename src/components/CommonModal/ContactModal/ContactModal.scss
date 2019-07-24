@@ -1,0 +1,54 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.prod-detail .contact-modal .common-modal .modal-dialog {
+    max-width: 350px;
+}
+
+.contactModal {
+    &__closeIcon {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        cursor: pointer;
+    }
+    &__content {
+        color: $color-darkgrey;
+        font-size: 18px;
+        // font-family: $font-OSR;
+        font-weight: normal;
+        padding: 10px 0 10px 20px;
+
+        &__label-text {
+            font-size: 18px;
+            margin-top: 10px;
+            color: $color-grey;
+        }
+
+        &__title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            color: $color-grey;
+            margin-top: -10px;
+        }
+
+        &__icon {
+            width: 16.8px;
+            height: 16.8px;
+        }
+
+        .row {
+            width: 100%;
+            margin-top: 0px;
+            padding: 10px 5px;
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+        }
+    }
+}

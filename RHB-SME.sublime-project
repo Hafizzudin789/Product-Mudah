@@ -1,0 +1,28 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				".grunt",
+				".idea",
+				".sass-cache",
+				".tmp",
+				"~build-*",
+				"node_modules",
+				"vendor"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"trim_trailing_white_space_on_save": true,
+		"FuzzyFilePath":
+		{
+		},
+		"tab_size": 4,
+		"translate_tabs_to_spaces": false
+	}
+}

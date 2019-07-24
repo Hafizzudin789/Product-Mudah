@@ -1,0 +1,66 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.gps-location {
+    &__header {
+        background-color: $color-brand-blue;
+        border-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        h3 {
+            color: $color-white;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: bold;
+            padding: 14px 20px;
+            margin: 0px;
+            span {
+                float: right;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &__content {
+        label {
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: normal;
+            display: block;
+            letter-spacing: -0.2px;
+        }
+        &__container {
+            margin: 0 20px;
+            .row {
+                width: 100%;
+                margin: 0;
+                padding: 8px 5px 6px;
+                color: $color-darkgrey;
+                font-size: 16px;
+                // font-family: $font-OSR;
+                font-weight: normal;
+                .col-11 {
+                    -webkit-align-items: center; /* Safari 7.0+ */
+                    display: flex;
+                    align-items: center;
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+    &__footer {
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: $color-grey;
+        font-size: 16px;
+        // font-family: $font-OSSB;
+        font-weight: 700;
+        max-width: 140px;
+        border: 1px solid $color-brand-blue;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <circle id="a" cx="243" cy="379" r="10"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-233 -369)">
+        <use fill="#718197" xlink:href="#a"/>
+        <circle cx="243" cy="379" r="8.5" stroke="#FFF" stroke-width="3"/>
+    </g>
+</svg>

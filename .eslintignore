@@ -1,0 +1,11 @@
+src/components/ErrorServer/index.js
+src/components/Loader/index.js
+src/encryption/
+src/layouts/CoreLayout/CoreLayout.js
+src/containers/appHistory.js
+src/index.html
+src/main.js
+src/util/encrypt.js
+src/util/XORCipher.js
+src/store/createStore.js
+src/services/index.js

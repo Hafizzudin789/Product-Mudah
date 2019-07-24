@@ -1,0 +1,66 @@
+@import 'color.scss';
+@import 'variable.scss';
+
+.pd-sales{
+    &__header {
+        background-color: $color-white;
+        border-radius: 4px;
+        h3 {
+            color: $color-darkgrey;
+            font-size: 16px;
+            // font-family: $font-OSR;
+            font-weight: bold;
+            padding: 16px 20px;
+            border-bottom: 1px solid $color-grey;
+            span {
+                float: right;
+                cursor: pointer;
+                &--close{
+                    -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                    -webkit-transform: scale(0.4);
+                    transform: scale(0.4);
+                    -moz-animation: popOut .6s ease-in forwards;
+                    -webkit-animation: popOut .6s ease-in forwards;
+                    animation: popOut .6s ease-in forwards;
+                }
+                @-webkit-keyframes popOut {
+                    0% { -webkit-transform: scale(1); opacity: 1; }
+                    50% { -webkit-transform: scale(1.1); opacity: .6; -webkit-animation-timing-function: ease-out; }
+                    100% { }
+                }
+
+                @keyframes popOut {
+                    0% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+                    50% { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .6; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+                    100% { }
+                }
+            }
+        }
+    }
+
+    &__content {
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: normal;
+        //padding: 30px 60px;
+        .sa-chart{
+            cursor: pointer;
+        }
+    }
+
+    &__footer {
+        padding: 17px 20px;
+        text-align: right;
+        cursor: pointer;
+        color: $color-darkgrey;
+        font-size: 16px;
+        // font-family: $font-OSR;
+        font-weight: bold;
+        border-top: 1px solid $color-grey;
+    }
+}
+.sa-chart{
+    cursor: pointer;
+}

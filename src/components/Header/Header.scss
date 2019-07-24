@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+@import url(https://fonts.googleapis.com/css?family=Inder|Great+Vibes);
+
+// ---------------------------------------------
+// Variables
+// ---------------------------------------------
+
+// colors
+$green-tomato: #24662A;
+$red-tomato: #d82028;
+$red-tomato-dark: darken($red-tomato, 8%);
+$rotten-tomatoes: darken($red-tomato, 15%);
+$bannerPadding: 40px;
+$buttonDefaultColor: #eee;
+$buttonSmall: 10px 15px;
+$buttonMedium: 10px 20px;
+
+
+// -------------------------------------------
+// Pure SCSS Navigation Menu
+// -------------------------------------------
+
+/* container */
+nav {  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  background-color: antiquewhite;;
+  border-radius: 4px;
+  z-index: 999;
+//   box-shadow: 0 3px 0 0 $red-tomato-dark;
+  width: 100%;
+
+  .nav-button {
+    display: none;
+    padding: 10px;
+    color: #000;
+    // background-color: $red-tomato;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+/* navigation */
+.nav {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+//   background: $red-tomato;
+  margin: 0 auto ;
+  padding: 0 40px;
+  height: initial;
+  transition: height .3s ease;
+
+  .pad{
+    padding-top: 15px;
+    // padding-bottom: 1.5rem!important;
+    color: red;
+    margin-right: 7rem;
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+  > li {
+    list-style: none;
+    
+    a {
+      display: block;  
+      font-family: "Open Sans";
+      font-size: 15px;
+      color: #000;
+      text-transform: capitalize;
+      text-decoration: none;
+      padding: 20px;
+    }
+    // change link color 
+    &:hover > a {
+      background: azure;
+      color: #000;
+    }
+    // display submenu
+    &:hover > .nav__sub {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+/* Sub navigation */
+.nav__sub {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: $red-tomato-dark;
+  
+  > li {
+     display: flex;
+     position: relative;
+    
+    > a {
+      padding: 15px 60px;
+      font-size: 15px;
+      flex: 1 1 auto;
+      
+      &:hover {
+        background: $rotten-tomatoes;
+      }
+    }
+  }
+}
+
+
+//------------------------------------------------
+// Optional Styles
+// -----------------------------------------------
+.welcome {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: start;
+  align-items: baseline;
+  text-align: center;
+  
+  &__title {
+    font-family: 'great vibes';
+    font-size: 5em;
+    margin-bottom: 20px;
+    color: #24662A;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .banner {
+    padding-top: 0;
+  }
+  
+  nav {
+    border-radius: 0;    
+    &.visible {
+      .nav {
+        height: initial;
+        overflow: initial;
+        transition: height .3s ease;
+        flex: 1 1 auto;
+      }
+    }
+    .nav-button {
+      display: inline-flex;
+      flex: 1 1 auto;
+    }
+  }
+  
+  .nav {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    
+    li {
+      width: 100%;
+      &:hover .nav__sub {
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        text-align: center;
+      }
+    }
+  }
+  
+ .nav__sub {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    position: initial;
+   
+    li {
+      flex: 0 1 auto;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background-color: #eee;
+  text-decoration: none;
+  color: #333;
+  transition: background-color .5s ease;
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: darken(#eee, 50%);
+    transition: background-color .5s ease;
+  }
+  
+  &--primary {
+    background-color: $red-tomato;
+    color: #fff;
+    
+    &:hover,
+    &:active {
+      background-color: darken($red-tomato, 10%);
+      color: #eee;
+    }
+  }
+}
