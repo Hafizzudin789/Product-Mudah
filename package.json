@@ -150,7 +150,7 @@
     "lodash": "4.15.0",
     "moment": "^2.18.1",
     "normalize.css": "^5.0.0",
-    "npm": "^3.0.0",
+    "npm": "^6.13.4",
     "numeral": "^2.0.6",
     "pdfjs-dist": "^1.9.589",
     "pidcrypt": "0.0.31",
